@@ -1,16 +1,31 @@
+
+// represents the smallest atomic part of a piece of code
 export class Token {
 
-    constructor(private type_: string, private value_: number|null=null) {}
+    private type_: string
+    private value_?: number
 
+    constructor(type: string, value?: number) {
+        this.type_ = type
+        this.value_ = value
+    }
+
+    /**
+     * gives the type of the data a token represents
+     */
     get type(): string {
         return this.type_
     }
 
-    get value(): number | null {
+    /**
+     * returns the data stored in a token
+     * (currently can only hold a number if any data is given to a token)
+     */
+    get value(): number | undefined {
         return this.value_
     }
 
-    toString() {
+    toString(): string {
         let output = `${this.type_}`
         if (this.value_) {
             output = `${this.type_}:${this.value_}`

@@ -1,4 +1,5 @@
 "use strict";
+// This file holds a bunch of constants that will be used around the program to help eliminate magic values
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TT_INT = 'INT';
 exports.TT_FLOAT = 'FLOAT';

@@ -1,3 +1,5 @@
+// This file holds a bunch of constants that will be used around the program to help eliminate magic values
+
 export const TT_INT = 'INT'
 export const TT_FLOAT = 'FLOAT'
 export const TT_PLUS = "PLUS"
